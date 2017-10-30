@@ -11,27 +11,20 @@ function show() {
 toev.addEventListener('click', show);
 eentje.addEventListener('click', show);
 
-//
-//var toevoegen = document.querySelector('div img');
-//var likes = document.querySelector('.like');
-//
-//function zien() {
-//    toevoegen.classList.toggle('toevoegen');
-//   likes.classList.toggle('show');
-//}
 
-//toevoegen.addEventListener('click', zien);
 
-//
-//var verdwijn = document.getElementById('likes');
-//var show = document.querySelector('.foto');
-//
-//
-//function zien() {
-//    verdwijn.classList.toggle('weg');
-//    show.classList.toggle('show');
-//
-//}
-//
-//verdwijn.addEventListener('click', zien);
-//show.addEventListener('click', zien);
+//var duimpjeOmhoog = document.getElementById("duimpjeOmhoog");
+
+
+var balk = document.getElementById("balk");
+var vink = document.getElementById("vink");
+
+
+function balkje() {
+    balk.classList.toggle("weg");
+    vink.style.display = "block";
+
+}
+
+balk.addEventListener('click', balkje);
+vink.addEventListener('click', balkje);

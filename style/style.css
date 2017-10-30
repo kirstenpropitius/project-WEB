@@ -155,7 +155,7 @@ ul ul {
     display: none;
     flex-direction: column;
     background: white;
-    top: 2.5em;
+    top: 4em;
 }
 
 ul ul:target {
@@ -486,15 +486,39 @@ fieldset:valid .feedback {
     color: #02d66c;
 }
 
+#downloads li img {
+    padding-left: 1em;
+    width: 5em;
+    height: 1em;
+}
+
+#downloads li:nth-of-type(2) img {
+    padding-left: 1em;
+    width: 2em;
+    height: 2em;
+}
+
+#downloads li:nth-of-type(3) img {
+    padding-left: 4.5em;
+    width: 2em;
+    height: 2em;
+}
+
+#downloads li img:nth-of-type(2) {
+    width: 2em;
+    height: 2em;
+}
+
+#downloads li a:nth-of-type(1) {
+    float: left;
+}
+
 
 /*javascript*/
 
 .toevoegen {
     transform: scale(1.6);
 }
-
-
-/*a[href="#downloads"] {}*/
 
 .boek {
     position: absolute;
@@ -511,4 +535,15 @@ fieldset:valid .feedback {
 
 .toegevoegd {
     display: block;
+}
+
+.weg {
+    display: none;
+}
+
+#vink {
+    display: none;
+    position: absolute;
+    margin-top: -0.7em;
+    margin-left: 9.8em;
 }
