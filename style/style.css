@@ -228,6 +228,7 @@ aside {
         color: #2802a0;
     }
     #filter button {
+        padding: 0.9em 1em;
         font-weight: bold;
         color: white;
         background-color: #ff3268;
@@ -292,6 +293,11 @@ aside {
         justify-content: center;
         width: 30em;
         margin: auto;
+    }
+    ul ul {
+        width: 20em;
+        padding: 1em;
+        background: white;
     }
     /*
     article:first-of-type {
@@ -487,19 +493,16 @@ fieldset:valid .feedback {
 }
 
 #downloads li img {
-    padding-left: 1em;
     width: 5em;
     height: 1em;
 }
 
 #downloads li:nth-of-type(2) img {
-    padding-left: 1em;
     width: 2em;
     height: 2em;
 }
 
 #downloads li:nth-of-type(3) img {
-    padding-left: 4.5em;
     width: 2em;
     height: 2em;
 }
@@ -509,8 +512,19 @@ fieldset:valid .feedback {
     height: 2em;
 }
 
-#downloads li a:nth-of-type(1) {
+#downloads li a {
     float: left;
+}
+
+#downloads p {
+    font-family: 'Nexa bold';
+    display: inline;
+    padding-left: 1em;
+}
+
+#downloads label {
+    color: #ff3268;
+    font-size: 1.3em;
 }
 
 
@@ -523,7 +537,7 @@ fieldset:valid .feedback {
 .boek {
     position: absolute;
     margin-top: 0.6em;
-    margin-left: 19.7em;
+    margin-left: 21.8em;
     height: 2em;
     width: 2em;
     display: none;
@@ -544,6 +558,7 @@ fieldset:valid .feedback {
 #vink {
     display: none;
     position: absolute;
+    float: right;
     margin-top: -0.7em;
-    margin-left: 9.8em;
+    margin-left: 11em;
 }
