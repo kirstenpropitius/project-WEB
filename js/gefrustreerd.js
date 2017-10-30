@@ -1,8 +1,13 @@
+//BRON: Alex Settels
+var duimpjeOmhoog = document.getElementById("duimpjeOmhoog");
+var duimpjeOmlaag = document.getElementById("duimpjeOmlaag");
+var likes = document.getElementById("likes");
+
 function zien() {
-    document.getElementById("duimpjeOmhoog").style.display = "none"
-    document.getElementById("duimpjeOmlaag").style.display = "none"
-    document.getElementById("likes").style.display = "block"
+    duimpjeOmhoog.classList.toggle("weg");
+    duimpjeOmlaag.classList.toggle("weg");
+    likes.style.display = "block";
 
 }
-document.getElementById("duimpjeOmhoog").addEventListener("click", zien);
-document.getElementById("duimpjeOmlaag").addEventListener("click", zien);
+duimpjeOmhoog.addEventListener("click", zien);
+duimpjeOmlaag.addEventListener("click", zien);

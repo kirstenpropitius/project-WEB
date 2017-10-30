@@ -70,6 +70,10 @@ main {
     flex-wrap: wrap;
 }
 
+h1 {
+    width: 100%;
+}
+
 article {
     color: #606060;
     background: #fbf7f3;
@@ -103,29 +107,12 @@ h2 img {
     float: right;
 }
 
-
-/*
-h2:hover {
-    color: #2802a0;
-}
-*/
-
 section {
     display: none;
 }
 
 section:target {
     display: block;
-}
-
-h1 {
-    width: 100%;
-}
-
-select {
-    display: flex;
-    color: black;
-    font-size: 0.9em;
 }
 
 
@@ -151,6 +138,9 @@ li img {
     height: 2em;
 }
 
+
+/*dropdown*/
+
 ul ul {
     display: none;
     flex-direction: column;
@@ -159,7 +149,7 @@ ul ul {
 }
 
 ul ul:target {
-    margin-top: 2.7em;
+    margin-top: 2.9em;
     display: block;
     width: 100%;
 }
@@ -178,19 +168,43 @@ label a {
     color: #ff3268;
 }
 
+#downloads li img {
+    width: 5em;
+    height: 1em;
+}
+
+#downloads li:nth-of-type(2) img {
+    width: 2em;
+    height: 2em;
+}
+
+#downloads li:nth-of-type(3) img {
+    width: 2em;
+    height: 2em;
+}
+
+#downloads li img:nth-of-type(2) {
+    width: 2em;
+    height: 2em;
+}
+
+#downloads li a {
+    float: left;
+}
+
+#downloads p {
+    font-family: 'Nexa bold';
+    display: inline;
+    padding-left: 1em;
+}
+
+#downloads label {
+    color: #ff3268;
+    font-size: 1.3em;
+}
+
 
 /* aside */
-
-
-/*
-aside > ul {
-    display: inline-block;
-    margin: 0;
-    padding-left: 2em;
-    padding-right: 2em;
-    text-align: left;
-}
-*/
 
 aside {
     color: black;
@@ -198,16 +212,24 @@ aside {
     background-color: #fbf7f3;
 }
 
+select {
+    display: flex;
+    color: black;
+    font-size: 0.9em;
+}
+
 
 /* media queries */
 
 @media (max-width: 36em) {
+    /*    algemeen*/
     main {
         justify-content: center;
     }
     article {
         display: flex;
     }
+    /*    aside*/
     aside {
         flex: 1 auto;
         background-color: #fbf7f3;
@@ -240,6 +262,7 @@ aside {
 }
 
 @media (min-width: 36em) {
+    /*    algemeen*/
     .wrapper {
         display: flex;
     }
@@ -299,31 +322,18 @@ aside {
         padding: 1em;
         background: white;
     }
-    /*
-    article:first-of-type {
-     max-width: 40em;
-     // padding: 4em;
-     margin: 4em;
- }
-*/
 }
 
-
-/*
-@media (min-width: 36em) {
-
-
-    aside > ul {
-        display: flex;
-        margin: 0;
-        flex-direction: row;
-        justify-content: space-around;
+@media (min-width: 70em) {
+    article:first-of-type {
+        max-width: 30em;
+        padding: 1em;
+        margin: 4em;
     }
 }
-*/
 
 
-/* artikelen stylen verhaal */
+/* artikelen stijlen verhaal */
 
 .index article:nth-child(2):hover {
     background: url(images/spetters3.jpg);
@@ -387,7 +397,7 @@ p img {
 }
 
 
-/* artikelen stylen filterpagina */
+/* artikelen stijlen filterpagina */
 
 .filterpagina article:nth-child(3):hover {
     background: url(images/spetters3.jpg);
@@ -492,43 +502,8 @@ fieldset:valid .feedback {
     color: #02d66c;
 }
 
-#downloads li img {
-    width: 5em;
-    height: 1em;
-}
 
-#downloads li:nth-of-type(2) img {
-    width: 2em;
-    height: 2em;
-}
-
-#downloads li:nth-of-type(3) img {
-    width: 2em;
-    height: 2em;
-}
-
-#downloads li img:nth-of-type(2) {
-    width: 2em;
-    height: 2em;
-}
-
-#downloads li a {
-    float: left;
-}
-
-#downloads p {
-    font-family: 'Nexa bold';
-    display: inline;
-    padding-left: 1em;
-}
-
-#downloads label {
-    color: #ff3268;
-    font-size: 1.3em;
-}
-
-
-/*javascript*/
+/*javascript 1*/
 
 .toevoegen {
     transform: scale(1.6);
@@ -537,7 +512,7 @@ fieldset:valid .feedback {
 .boek {
     position: absolute;
     margin-top: 0.6em;
-    margin-left: 21.8em;
+    margin-left: 19.3em;
     height: 2em;
     width: 2em;
     display: none;
@@ -550,6 +525,9 @@ fieldset:valid .feedback {
 .toegevoegd {
     display: block;
 }
+
+
+/*javascript 2*/
 
 .weg {
     display: none;

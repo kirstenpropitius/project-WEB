@@ -25,13 +25,13 @@ body {
 }
 
 
-/*onderkant sectie*/
+/*onderste sectie*/
 
 main h1 {
     font-size: 1.7em;
     font-family: 'Nexa bold';
     text-align: center;
-    color: red;
+    color: #02d66c;
     opacity: 0.7;
     background: #f3e5d9;
     padding: 1em;
@@ -41,9 +41,14 @@ main h1 {
 main p {
     font-family: 'Nexa bold';
     text-align: center;
-    color: red;
+    color: #02d66c;
     opacity: 0.7;
     border-radius: 0.625em;
+}
+
+div {
+    display: flex;
+    justify-content: center;
 }
 
 div img:nth-child(1) {
@@ -121,14 +126,14 @@ section:first-child {
         background-image: url(images/mobielgespo.png);
         background-size: cover;
         background-repeat: no-repeat;
-        min-height: 300vh;
+        min-height: 380vh;
         width: 100%;
         padding: 0;
     }
     section:nth-of-type(2) {
         min-height: 20vh;
     }
-    section:hover {
+    section:nth-of-type(1):hover {
         transform: rotate(360deg);
         transition: 3s;
     }
@@ -143,9 +148,9 @@ section:first-child {
         min-width: 100%;
     }
     section:nth-of-type(2) {
-        min-height: 10vh;
+        max-height: 10em;
     }
-    section:hover {
+    section:nth-of-type(1):hover {
         transform: rotate(360deg);
         transition: 3s;
     }
@@ -156,14 +161,28 @@ section:first-child {
         background-image: url(images/irritant.png);
         background-size: cover;
         background-repeat: no-repeat;
-        height: 130vh;
+        height: 140vh;
         min-width: 100%;
     }
     section:nth-of-type(2) {
-        min-height: 10vh;
+        max-height: 10em;
     }
-    section:hover {
+    section:nth-of-type(1):hover {
         transform: rotate(360deg);
         transition: 3s;
     }
+}
+
+
+/*javascript*/
+
+.likes img:nth-of-type(3) {
+    margin-left: 0.2em;
+    position: absolute;
+    height: 2.3em;
+    display: none;
+}
+
+.weg {
+    display: none;
 }

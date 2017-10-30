@@ -1,21 +1,22 @@
-var toev = document.querySelector('main img');
+//BRON: Alex Settels, www.w3schools.com/js/
+
+//Eentje bij de download button//
+var vergroten = document.querySelector('main img');
 var eentje = document.querySelector('.boek');
 
 
 function show() {
-    toev.classList.toggle('toevoegen');
+    vergroten.classList.toggle('toevoegen');
     eentje.classList.toggle('toegevoegd');
 
 }
 
-toev.addEventListener('click', show);
+vergroten.addEventListener('click', show);
 eentje.addEventListener('click', show);
 
 
 
-//var duimpjeOmhoog = document.getElementById("duimpjeOmhoog");
-
-
+//Laadbalkje in de dropdown//
 var balk = document.getElementById("balk");
 var vink = document.getElementById("vink");
 
