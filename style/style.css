@@ -327,8 +327,7 @@ select {
 @media (min-width: 70em) {
     article:first-of-type {
         max-width: 30em;
-        padding: 1em;
-        margin: 4em;
+        font-size: 1.2em;
     }
 }
 
@@ -394,6 +393,12 @@ p img {
     margin-right: 0.4em;
     height: 1.3em;
     width: 1.3em;
+}
+
+h1 img {
+    padding-left: 1em;
+    width: 1em;
+    height: 1em;
 }
 
 
