@@ -124,7 +124,7 @@ section:first-child {
 @media (max-width: 30em) {
     section {
         background-image: url(images/mobielgespo.png);
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         min-height: 380vh;
         width: 100%;
